@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1010px" height="584px" font-family="SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace" font-size="14px">
+<style>
+  .ascii { fill: #7d8590; white-space: pre; }
+  .hdr { fill: #e6edf3; font-size: 18px; font-weight: 600; }
+  .sub { fill: #7d8590; font-size: 13px; }
+  .k { fill: #58a6ff; }
+  .v { fill: #e6edf3; }
+  .dots { fill: #484f58; }
+  .add { fill: #3fb950; }
+  .del { fill: #f85149; }
+  .foot { fill: #7d8590; font-size: 11px; font-style: italic; }
+  text, tspan { white-space: pre; }
+</style>
+<rect width="1010px" height="584px" fill="#0d1117" rx="14"/>
+<rect x="0.5" y="0.5" width="1009px" height="583px" fill="none" stroke="#30363d" rx="14"/>
+
+<text class="ascii">
+<tspan x="24" y="38">                    ----:::::.                </tspan>
+<tspan x="24" y="57">                  =*=:.........:              </tspan>
+<tspan x="24" y="76">                 ++. ...........              </tspan>
+<tspan x="24" y="95">                 *%.-*+---::-=+-.             </tspan>
+<tspan x="24" y="114">                 *%*#-::.:-..::*-             </tspan>
+<tspan x="24" y="133">                 *+@=--:.=#=:-=**-            </tspan>
+<tspan x="24" y="152">                 *-@#*=--===-:=**-            </tspan>
+<tspan x="24" y="171">                 -=**::.::---::+=             </tspan>
+<tspan x="24" y="190">                    *=::-----:-=              </tspan>
+<tspan x="24" y="209">                    ++..::...=-               </tspan>
+<tspan x="24" y="228">                  *+--::...:-*+               </tspan>
+<tspan x="24" y="247">              -+*#@#*=:::::--+:==             </tspan>
+<tspan x="24" y="266">          =*#%+######**=:::::...#@%#*=        </tspan>
+<tspan x="24" y="285">      =*%@@%***++*+=+##*+=:::--+=*%%%%##=     </tspan>
+<tspan x="24" y="304">    =#@%##*++++***++-+:.-+=:=*=-=#%%#%+*%-    </tspan>
+<tspan x="24" y="323">   #@@%**++++***###***=:=+==+=.:%%###%+++#    </tspan>
+<tspan x="24" y="342">  *@%#+-*+-+==+++*****#=:#++**.=#++**#+*=#    </tspan>
+<tspan x="24" y="361">  @%#++-+=:==---==++***# :*+*- =#++++***=+    </tspan>
+<tspan x="24" y="380"> =%%+-+-+=:==-====++***#+ -*+: **+++***#--    </tspan>
+<tspan x="24" y="399"> **%----==:=-==++=++****%= *=.:#*#*+++#* ==   </tspan>
+<tspan x="24" y="418"> +#+:-----:*+=====+*****#+ -= +*==+***%= *+   </tspan>
+<tspan x="24" y="437">#+%-:----:-*=+*****+****++: :-*+*==+#*#.-=+   </tspan>
+<tspan x="24" y="456">**%------:+**####**+****#*=:.*#*+====**:+.*   </tspan>
+<tspan x="24" y="475">+%#-----:.+****++++++++++==-:+***+=--=*--.*   </tspan>
+</text>
+
+<text>
+<tspan x="470" y="38" class="hdr">3141roy</tspan><tspan class="sub"> — github card</tspan>
+</text>
+<line x1="470" y1="52" x2="986" y2="52" stroke="#21262d" stroke-width="1"/>
+
+<text>
+<tspan x="470" y="92"><tspan class="dots">. </tspan><tspan class="k">OS:</tspan><tspan class="dots"> ...................................... </tspan><tspan class="v">macOS, Ubuntu</tspan></tspan>
+<tspan x="470" y="114"><tspan class="dots">. </tspan><tspan class="k">Uptime:</tspan><tspan class="dots" id="uptime_data_dots"> ..................... </tspan><tspan class="v" id="uptime_data">24 years, 2 months, 4 days</tspan></tspan>
+<tspan x="470" y="136"><tspan class="dots">. </tspan><tspan class="k">Host:</tspan><tspan class="dots"> ............................................ </tspan><tspan class="v">Cvent</tspan></tspan>
+<tspan x="470" y="158"><tspan class="dots">. </tspan><tspan class="k">Role:</tspan><tspan class="dots"> ......................................... </tspan><tspan class="v">SRE - II</tspan></tspan>
+<tspan x="470" y="180"><tspan class="dots">. </tspan><tspan class="k">IDE:</tspan><tspan class="dots"> ........................................... </tspan><tspan class="v">VS Code</tspan></tspan>
+<tspan x="470" y="202" class="dots">.</tspan>
+<tspan x="470" y="224"><tspan class="dots">. </tspan><tspan class="k">Languages.Programming:</tspan><tspan class="dots"> ......... </tspan><tspan class="v">Python, TypeScript, C++</tspan></tspan>
+<tspan x="470" y="246"><tspan class="dots">. </tspan><tspan class="k">Languages.Computer:</tspan><tspan class="dots"> .................. </tspan><tspan class="v">YAML, JSON, LaTeX</tspan></tspan>
+<tspan x="470" y="268"><tspan class="dots">. </tspan><tspan class="k">Languages.Real:</tspan><tspan class="dots"> ................ </tspan><tspan class="v">English, Hindi, Bengali</tspan></tspan>
+<tspan x="470" y="290" class="dots">.</tspan>
+<tspan x="470" y="312"><tspan class="dots">. </tspan><tspan class="k">Hobbies:</tspan><tspan class="dots"> ......................... </tspan><tspan class="v">Football, Video Games</tspan></tspan>
+<tspan x="470" y="334" class="dots">.</tspan>
+<tspan x="470" y="356" class="dots">- <tspan class="k">Contact</tspan> ------------------------------------------------</tspan>
+<tspan x="470" y="378"><tspan class="dots">. </tspan><tspan class="k">Email:</tspan><tspan class="dots"> ............................ </tspan><tspan class="v">rajni33111@gmail.com</tspan></tspan>
+<tspan x="470" y="400"><tspan class="dots">. </tspan><tspan class="k">LinkedIn:</tspan><tspan class="dots"> ................................ </tspan><tspan class="v">rajnnikantroy</tspan></tspan>
+<tspan x="470" y="422"><tspan class="dots">. </tspan><tspan class="k">Instagram:</tspan><tspan class="dots"> ............................... </tspan><tspan class="v">rajnnikantroy</tspan></tspan>
+<tspan x="470" y="444" class="dots">.</tspan>
+<tspan x="470" y="466" class="dots">- <tspan class="k">GitHub Stats</tspan> -------------------------------------------</tspan>
+<tspan x="470" y="488"><tspan class="dots">. </tspan><tspan class="k">Repos:</tspan><tspan class="dots" id="repo_data_dots"> ................. </tspan><tspan class="v" id="repo_data">23</tspan><tspan class="dots"> {Contributed: </tspan><tspan class="v" id="contrib_data">32</tspan><tspan class="dots">} | Stars: </tspan><tspan class="v" id="star_data">3</tspan></tspan>
+<tspan x="470" y="510"><tspan class="dots">. </tspan><tspan class="k">Commits:</tspan><tspan class="dots" id="commit_data_dots"> ............................ </tspan><tspan class="v" id="commit_data">152</tspan><tspan class="dots"> | Followers: </tspan><tspan class="v" id="follower_data">8</tspan></tspan>
+<tspan x="470" y="532"><tspan class="dots">. </tspan><tspan class="k">Lines of Code on GitHub:</tspan><tspan class="dots" id="loc_data_dots">. </tspan><tspan class="v" id="loc_data">293,258</tspan><tspan class="dots"> ( </tspan><tspan class="add" id="loc_add">295,327</tspan><tspan class="add">++</tspan><tspan class="dots">, </tspan><tspan class="del" id="loc_del">2,069</tspan><tspan class="del">--</tspan><tspan class="dots"> )</tspan></tspan>
+</text>
+
+<text>
+<tspan x="470" y="568" class="foot">Last synced: <tspan id="synced_data">2026-08-09 08:54 UTC</tspan></tspan>
+</text>
+</svg>
