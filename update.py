@@ -118,14 +118,9 @@ def age_string(birthday):
 def repo_page_with_commit_totals(owner_affiliation, include_stars):
     """
     All repos for the given affiliation, paginated, each stamped with its
-    default-branch commit totalCount. `stargazers` is only requested for
-    owned repos (include_stars=True) — on repos you're a collaborator/org
-    member on but don't own, a fine-grained PAT can get a FORBIDDEN back
-    for that field unless the org has explicitly approved the token, even
-    with read access to the repo itself. We never need star counts for
-    non-owned repos anyway, so just don't ask.
+    default-branch commit totalCount. Stargazer counts (for owned repos only)
+    are fetched via REST API to avoid fine-grained PAT permission issues.
     """
-    star_field = "stargazers { totalCount }" if include_stars else ""
     edges, cursor, total = [], None, None
     while True:
         data = gql(
@@ -137,7 +132,6 @@ def repo_page_with_commit_totals(owner_affiliation, include_stars):
                         edges {{
                             node {{
                                 nameWithOwner
-                                {star_field}
                                 defaultBranchRef {{
                                     target {{ ... on Commit {{ history {{ totalCount }} }} }}
                                 }}
@@ -159,6 +153,24 @@ def repo_page_with_commit_totals(owner_affiliation, include_stars):
         if not page["pageInfo"]["hasNextPage"]:
             break
         cursor = page["pageInfo"]["endCursor"]
+
+    # Fetch stargazer counts via REST API if requested (fine-grained PAT bypass)
+    if include_stars:
+        for e in edges:
+            owner, repo = e["node"]["nameWithOwner"].split("/")
+            try:
+                resp = requests.get(
+                    f"{REST_URL}/repos/{owner}/{repo}",
+                    headers=REST_HEADERS,
+                    timeout=10
+                )
+                if resp.status_code == 200:
+                    e["node"]["stargazers"] = {"totalCount": resp.json()["stargazers_count"]}
+                else:
+                    e["node"]["stargazers"] = {"totalCount": 0}
+            except Exception:
+                e["node"]["stargazers"] = {"totalCount": 0}
+
     return total, edges
 
 
