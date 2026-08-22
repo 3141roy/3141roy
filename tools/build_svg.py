@@ -45,7 +45,7 @@ HOBBIES = [
     ("Hobbies", "Football, Video Games"),
 ]
 CONTACT = [
-    ("Email", "rajni33111@gmail.com"),
+    ("Email", "01rajnikantroy@gmail.com"),
     ("LinkedIn", "rajnnikantroy"),
     ("Instagram", "rajnnikantroy"),
 ]
