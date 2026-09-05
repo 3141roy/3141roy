@@ -34,7 +34,7 @@ ABOUT = [
     ("Uptime", "24 years, 2 months, 3 days", "uptime_data", "uptime_data_dots"),  # age since birth (2002-06-05), recomputed daily
     ("Host", "Cvent"),
     ("Role", "SRE - II"),
-    ("IDE", "VS Code"),
+    ("IDE", "VS Code (yes i know)"),
 ]
 LANGUAGES = [
     ("Languages.Programming", "Python, TypeScript, C++"),
