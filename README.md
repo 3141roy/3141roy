@@ -14,12 +14,19 @@
 
 ---
 
-### About Me
+### 👋 About Me
 
 - SRE-II at Cvent — five nines of uptime, considerably fewer nines of sleep.
 - Handle's just π rounded to four digits, plus my name. No deeper story.
 - Off the clock: video games first, football maybe never.
 
+
+---
+
+### 🚀 Projects
+
+- [bundle.tools](https://bundle.tools) — free, open-source PDF/image tools that run entirely in your browser, no data leaves your device
+- more incoming
 
 ---
 
